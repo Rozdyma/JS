@@ -1,33 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zadanie 5</title>
-  <link rel="stylesheet" href="z5.css">
+  <link rel="stylesheet" href="z5.css" />
   <script>
-    function WinOpen_lukow(obraz, left) {
+    function WinOpen_lukow(nr) {
+      var dane = [
+        ["obraz1.html", 100, 300],
+        ["obraz2.html", 300, 250],
+        ["obraz3.html", 500, 200],
+        ["obraz4.html", 700, 150]
+      ];
+      
+      var d = dane[nr - 1]; 
+      
       window.open(
-        `obraz${obraz}.html`,
-        `okienko_obraz${obraz}`,
-        `toolbar=no, directories=no, menubar=no, height=280, width=200, top=400, left=${left}`);
+        d[0], 
+        "okno" + nr,
+        "width=280,height=340,left=" + d[1] + ",top=" + d[2] +
+        ",resizable=yes,scrollbars=yes,menubar=no,toolbar=no,location=no,status=no"
+      );
     }
   </script>
 </head>
 <body>
   <h1>wykonał: Kacper Łukowski mój numer w dzienniku 15, czyli mam układ [(15) mod 4=3] układ 3</h1>
+
   <div class="buttons">
-    <button onclick=" WinOpen_lukow(1, 500)">grafika1</button>
-    <button onclick=" WinOpen_lukow(2, 720)">grafika2</button>
-    <button onclick=" WinOpen_lukow(3, 940)">grafika3</button>
-    <button onclick=" WinOpen_lukow(4, 1160)">grafika4</button>
+    <button onclick="WinOpen_lukow(1)">grafika1</button>
+    <button onclick="WinOpen_lukow(2)">grafika2</button>
+    <button onclick="WinOpen_lukow(3)">grafika3</button>
+    <button onclick="WinOpen_lukow(4)">grafika4</button>
   </div>
-  
-  <input 
-    type="button" 
-    value="zamknij okno" 
+
+  <input
+    type="button"
+    value="zamknij okno"
     onclick="window.close()"
     class="close-button"
-  >
+  />
 </body>
 </html>
