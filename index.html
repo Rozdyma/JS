@@ -31,19 +31,14 @@ function okno_zamknij()
     </script>
 </head>
 <body>
-
     <h2>Szkielet zaliczeniowy JavaScript - Kacper Łukowski 3G</h2>
-
-    <table>
-        <tr>
-            <td><a href="z1_luko.html" target="_blank">zadanie1-Łukowski</a></td>
-            <td><a href="z2_luko.html" target="_blank">zadanie2-Łukowski</a></td>
-            <td><a href="zadanie3/zadanie3_luk.html" target="_blank">zadanie3-Łukowski</a></td>
-            <td><a href="zadanie4_lukowski.html" target="_blank">zadanie4-Łukowski</a></td>
-            <td><a href="zadanie4/z5_luko.html" target="_blank">zadanie5-Łukowski</a></td>
-            <td><button onclick="zamknijOkno()">zamknij okno</button></td>
-        </tr>
-    </table>
-
+   <form> 
+        <input type="button_z1" name="zadanie1" value="zadanie1-Łukowski" onclick="WinOpen_z1(' ')"> 
+        <input type="button_z2" name="zadanie2" value="zadanie2-Łukowski" onclick="WinOpen_z2(' ')"> 
+        <input type="button_z3" name="zadanie3" value="zadanie3-Łukowski" onclick="WinOpen_z3(' ')"> 
+        <input type="button_z4" name="zadanie4" value="zadanie4-Łukowski" onclick="WinOpen_z4(' ')"> 
+        <input type="button_z5" name="zadanie5" value="zadanie5-Łukowski" onclick="WinOpen_z5(' ')"> 
+        <input type="button" value="zamknij okno" onclick="okno_zamknij()"/> 
+    </form> 
 </body>
 </html>
