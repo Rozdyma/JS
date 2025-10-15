@@ -1,22 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kacper Lukowski</title>
-</head>
-<html>
-<body>
-  <div style="color:green;font-size:50px;'>
-    <script language="JavaScript">
-    var m_bil=prompt("m=","");
-    var b_bil
-    var c_bil
-    var a_bil=parseFloat(m_bil);
-    b_bil+a_bil+1;
-    c_bil+a_bil*(a_bil+1);
-    document.write("1/"+a_bil+" = 1/"+b_bil+" + 1/"+c_bil+"<br>");
-  </script>
-  </div>
-</body>
+<html> 
+ <body> 
+  <div style="color:green;font-size:50px;"> 
+    <script language="JavaScript"> 
+        
+var D1_luk = prompt("Podaj dzień 1 (D1_luk) =", "");
+var G1_luk = prompt("Podaj godzinę 1 (G1_luk) =", "");
+var D2_luk = prompt("Podaj dzień 2 (D2_luk) =", "");
+var G2_luk = prompt("Podaj godzinę 2 (G2_luk) =", "");
+
+var d1 = parseFloat(D1_luk);
+var g1 = parseFloat(G1_luk);
+var d2 = parseFloat(D2_luk);
+var g2 = parseFloat(G2_luk);
+
+var sek1 = (d1 * 24 + g1) * 3600;
+var sek2 = (d2 * 24 + g2) * 3600;
+var sekund = Math.abs(sek1 - sek2);
+
+document.write("Ilość sekund między dniem " + d1 + " godz. " + g1 +
+" a dniem " + d2 + " godz. " + g2 + " = " + sekund + " sekund<br>");
+
+function okno_zamknij_lukow() { 
+  window.close();
+}
+    </script> 
+  </div> 
+  <input type="button" value="zamknij okno" onclick="okno_zamknij_lukow()"/> 
+ </body> 
 </html>
+
