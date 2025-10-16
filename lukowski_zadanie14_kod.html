@@ -10,29 +10,27 @@
         <div class="title">KOD HTML</div>
  <textarea cols="90" rows="28"> 
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kacper Lukowski</title>
-</head>
 <html>
 <body>
-    <div style="color:darkblue; font-size:200%;">
+    <div style="color:green;font-size:50px;">
         <script language="JavaScript">
-            var D1_bil = prompt("Podaj m =", "");
-            var m = parseFloat(D1_bil);
-            var a, b, c, d;
+            var m_luk=prompt("m=","");
+            var b_luk;
+            var c_luk;
+            var d_luk;
+            var a_luk=parseFloat(m_luk);
+            b_kow = a_luk + 2;
+            c_kow = (a_luk+1)*(a_luk+2);
+            d_kow = a_luk * (a_luk+1);
+            document.write("1/" + a_luk + " = 1/" + b_luk + " +1/" + c_luk + " +1/" + d_luk + "<br>");
 
-            a = m + 2;
-            b = m * (m + 2);
-
-            c = a + 4;
-            d = a * (a + 4);
-
-            document.write("1/" + m + " = 1/" + (a) + " + 1/" + (b) + " + 1/" + (d));
+            function okno_zamknij_lukowski(){
+                window.close();
+            }
         </script>
     </div>
+
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_lukowski()"/>
 </body>
 </html>
       </textarea>
