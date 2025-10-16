@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Łukowski 3G</title>
+</head>
+
+<script>
+    function okno_zamknij_lukowski(){
+        window.close()
+    }
+
+    function WinOpen_lukowski_1(){
+        window.open("grafika1.html","okienko_grafika1","toolbar=no,directories=no,menubar=no,height=110,width=260,top=60,left=200");
+    }
+    
+    function WinOpen_lukowski_2(){
+        window.open("grafika2.html","okienko_grafika2","toolbar=no,directories=no,menubar=no,height=220,width=260,top=60,left=500");
+    }
+    
+    function WinOpen_lukowski_3(){
+        window.open("grafika3.html","okienko_grafika3","toolbar=no,directories=no,menubar=no,height=330,width=260,top=60,left=800");
+    }
+    
+    function WinOpen_lukowski_4(){
+        window.open("grafika4.html","okienko_grafika4","toolbar=no,directories=no,menubar=no,height=440,width=260,top=60,left=1100");
+    }
+</script>
+<body>
+    <p style="font-size: 1cm; color: red; font-weight: bold; text-align: center;">wykonał: Kacper Łukowski mój numer w dzienniku 15, czyli mam układ [(15) mod 4=3] układ 3</p>
+    <input type="button" name="grafika1" value="grafika1" onclick="WinOpen_lukowski_1()"/>
+    <input type="button" name="grafika2" value="grafika2" onclick="WinOpen_lukowski_2()"/>
+    <input type="button" name="grafika3" value="grafika3" onclick="WinOpen_lukowski_3()"/>
+    <input type="button" name="grafika4" value="grafika4" onclick="WinOpen_lukowski_4()"/>
+
+    <br><br><br><input type="button" value="zamknij okno" onclick="okno_zamknij_lukowski()"/>
+</body>
+</html>
