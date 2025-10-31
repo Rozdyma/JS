@@ -1,20 +1,61 @@
-<html> 
- <head> 
-  <meta charset="UTF-8"> 
-  <link rel="stylesheet" href="styl.css"> 
- </head> 
-<body> 
- <script type="text/javascript"> 
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <script>
+    function AB_luk() {
+      let aX_luk = parseFloat(document.getElementById('aX').value);
+      let aY_luk = parseFloat(document.getElementById('aY').value);
 
-  function AB_luk()
-  function BC_luk()
-  function AC_luk()
+      let bX_luk = parseFloat(document.getElementById('bX').value);
+      let bY_luk = parseFloat(document.getElementById('bY').value);
 
- </script> 
-  <h1>Wszystko o KWADRACIE</h1><br><br> 
-  Podaj długość boku: <input type="text" id="dlugosc" value="podaj długość"> cm<br><br><br> 
-  <input type="button" name="pole" value="Oblicz pole" Onclick="pole()"><br><br> 
-  <input type="button" name="obwod" value="Oblicz obwod" Onclick="obwod()"><br><br> 
-  <div  style="color:red;font-size:50px;"id="nazwa"></div> 
-</body> 
-</html> 
+      document.getElementById("answer").innerHTML = "|AB|= "
+        + (Math.sqrt((aX_luk - bX_luk) ** 2 + (aY_luk - bY_luk) ** 2)).toFixed(2);
+    }
+    function BC_luk() {
+      let bX_mys = parseFloat(document.getElementById('bX').value);
+      let bY_luk = parseFloat(document.getElementById('bY').value);
+      let cX_luk = parseFloat(document.getElementById('cX').value);
+      let cY_luk = parseFloat(document.getElementById('cY').value);
+
+      document.getElementById("answer").innerHTML = "|BC|= "
+        + (Math.sqrt((cX_luk - bX_luk) ** 2 + (cY_luk - bY_luk) ** 2)).toFixed(2);
+    }
+
+    function AC_luk() {
+      let aX_luk = parseFloat(document.getElementById('aX').value);
+      let aY_luk = parseFloat(document.getElementById('aY').value);
+      let cX_luk = parseFloat(document.getElementById('cX').value);
+      let cY_luk = parseFloat(document.getElementById('cY').value);
+
+      document.getElementById("answer").innerHTML = "|AC|= "
+        + (Math.sqrt((aX_luk - cX_luk) ** 2 + (aY_luk - cY_luk) ** 2)).toFixed(2);
+    }
+
+  </script>
+
+  Podaj X punktu A: <input type="text" id="aX"><br>
+  Podaj Y punktu A: <input type="text" id="aY"><br>
+  <br>
+  <br>
+  Podaj X punktu B: <input type="text" id="bX"><br>
+  Podaj Y punktu B: <input type="text" id="bY"><br>
+  <br>
+  <br>
+  Podaj X punktu C: <input type="text" id="cX"><br>
+  Podaj Y punktu C: <input type="text" id="cY"><br>
+  <br>
+  <br>
+
+  <input type="button" value="Oblicz AB" onclick="AB_mys()"><br>
+  <br>
+  <input type="button" value="Oblicz BC" onclick="BC_mys()"><br>
+  <br>
+  <input type="button" value="Oblicz AC" onclick="AC_mys()"><br>
+  <br>
+  <br>
+  <div style="color:red;font-size:50px;" id="answer"></div>
+</body>
+</html>
