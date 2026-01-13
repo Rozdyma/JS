@@ -1,0 +1,51 @@
+<html>
+<body>
+<textarea cols="120" rows="36">
+<html>
+<head>
+    <script type="text/javascript">
+
+    function Wiezowiec(nazwa, pietra, winda, miejsca) {
+        this.nazwa_wiezowca = nazwa;
+        this.ile_pieter = pietra;
+        this.winda = winda;
+        this.miejsca = miejsca;
+    }
+
+
+    Wiezowiec.prototype.wypisz = function () {
+        alert(
+            this.nazwa_wiezowca + ' ' +
+            this.ile_pieter + ' pięter ' +
+            this.winda + ' ' +
+            this.miejsca + ' biur'
+        );
+    };
+
+
+    var w1 = new Wiezowiec("Niebieszczak", 27, "winda obecna", 512);
+    var w2 = new Wiezowiec("SkyTower", 49, "winda obecna", 800);
+    var w3 = new Wiezowiec("Varso", 53, "winda obecna", 1200);
+
+
+    w1.wypisz();
+    w2.wypisz();
+    w3.wypisz();
+
+
+    document.write("Dostęp do właściwości:<br><br>");
+
+    document.write("Wiezowiec 1: " + w1.nazwa_wiezowca + " " + w1.ile_pieter + " " + w1.winda + " " + w1.miejsca + "<br>");
+    document.write("Wiezowiec 2: " + w2.nazwa_wiezowca + " " + w2.ile_pieter + " " + w2.winda + " " + w2.miejsca + "<br>");
+    document.write("Wiezowiec 3: " + w3.nazwa_wiezowca + " " + w3.ile_pieter + " " + w3.winda + " " + w3.miejsca + "<br>");
+
+    </script>
+</head>
+<body>
+    <br>
+    Programowanie obiektowe
+</body>
+</html>
+</textarea>
+</body>
+</html>
