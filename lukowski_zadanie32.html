@@ -2,7 +2,6 @@
 <head>
     <script type="text/javascript">
 
-    // ===== KONSTRUKTOR =====
     function Wiezowiec(nazwa, pietra, winda, miejsca) {
         this.nazwa_wiezowca = nazwa;
         this.ile_pieter = pietra;
@@ -10,7 +9,7 @@
         this.miejsca = miejsca;
     }
 
-    // ===== METODA PROTOTYPU =====
+
     Wiezowiec.prototype.wypisz = function () {
         alert(
             this.nazwa_wiezowca + ' ' +
@@ -20,17 +19,17 @@
         );
     };
 
-    // ===== POWOŁANIE 3 OBIEKTÓW =====
+
     var w1 = new Wiezowiec("Niebieszczak", 27, "winda obecna", 512);
     var w2 = new Wiezowiec("SkyTower", 49, "winda obecna", 800);
     var w3 = new Wiezowiec("Varso", 53, "winda obecna", 1200);
 
-    // ===== UŻYCIE METODY =====
+
     w1.wypisz();
     w2.wypisz();
     w3.wypisz();
 
-    // ===== DOSTĘP DO WŁAŚCIWOŚCI =====
+
     document.write("Dostęp do właściwości:<br><br>");
 
     document.write("Wiezowiec 1: " + w1.nazwa_wiezowca + " " + w1.ile_pieter + " " + w1.winda + " " + w1.miejsca + "<br>");
