@@ -1,0 +1,43 @@
+<html>
+<body>
+<textarea cols="130" rows="33">
+<html>
+<head>
+    <script type="text/javascript">
+        var Wiezowiec = {
+            ile_pieter: '27',
+            winda: 'obecna',
+            nazwa_wiezowca: 'Niebieszczak',
+            Wiezowiec_wyswietl_lukowski: function (){
+                document.write(
+                    "winda: " + this.winda + "<br>" +
+                    "nazwa_wiezowca: " + this.nazwa_wiezowca + "<br>" +
+                    "ile_pieter: " + this.ile_pieter + "<br>"
+                );
+            }
+        };
+
+        Wiezowiec.Wiezowiec_wyswietl_lukowski();
+        Wiezowiec.miejsca = 512;
+        Wiezowiec.wypisz = function() {
+            alert('ilość: ' + this.miejsca + ' biur');
+        };
+        Wiezowiec.wypisz();
+    </script>
+</head>
+<body>
+    <br>
+    Programowanie obiektowe. <br>
+    Obiekt to Wiezowiec<br>
+    Pola:<br>
+    ile_pieter<br>
+    winda<br>
+    nazwa_wiezowca<br>
+    metoda: Wiezowiec_wyswietl_lukowski<br>
+    nowe pole: miejsca<br>
+    nowa metoda: wypisz()<br>
+</body>
+</html>
+</textarea>
+</body>
+</html>
