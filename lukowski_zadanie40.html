@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Łukowski Z40_JS</title>
+</head>
+
+<body>
+
+<h2>Zadanie 40 - Kalkulator</h2>
+
+Podaj a: <input id="a_luk"><br><br>
+Podaj b: <input id="b_luk"><br><br>
+
+<button onclick="suma_luk()">Suma</button>
+<button onclick="roznica_luk()">Różnica</button>
+<button onclick="iloczyn_luk()">Iloczyn</button>
+<button onclick="iloraz_luk()">Iloraz</button>
+
+<p id="wynik_luk"></p>
+
+<script>
+function suma_luk() {
+    var a = parseFloat(document.getElementById("a_luk").value);
+    var b = parseFloat(document.getElementById("b_luk").value);
+    document.getElementById("wynik_luk").innerHTML = "Suma: " + (a + b);
+}
+
+function roznica_luk() {
+    var a = parseFloat(document.getElementById("a_luk").value);
+    var b = parseFloat(document.getElementById("b_luk").value);
+    document.getElementById("wynik_luk").innerHTML = "Różnica: " + (a - b);
+}
+
+function iloczyn_luk() {
+    var a = parseFloat(document.getElementById("a_luk").value);
+    var b = parseFloat(document.getElementById("b_luk").value);
+    document.getElementById("wynik_luk").innerHTML = "Iloczyn: " + (a * b);
+}
+
+function iloraz_luk() {
+    var a = parseFloat(document.getElementById("a_luk").value);
+    var b = parseFloat(document.getElementById("b_luk").value);
+
+    if (b == 0) {
+        document.getElementById("wynik_luk").innerHTML = "Nie wolno dzielić przez zero";
+    } else {
+        document.getElementById("wynik_luk").innerHTML = "Iloraz: " + (a / b);
+    }
+}
+</script>
+
+</body>
+<!-- Łukowski Z40_JS -->
+</html>
