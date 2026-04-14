@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Łukowski Z42_KOD</title>
+</head>
 
+<body>
+
+<textarea cols="100" rows="25">
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Łukowski Z42_JS</title>
+</head>
+
+<body>
+
+<h2>Zadanie 42</h2>
+
+<script>
+
+var imie_luk = prompt("Podaj imię:");
+var dl_luk = imie_luk.length;
+
+document.write("Długość imienia: " + dl_luk + "<br><br>");
+
+var nazwisko_luk = prompt("Podaj nazwisko:");
+var liczba_luk = nazwisko_luk.length + 20;
+
+if (liczba_luk > 10 && liczba_luk <= 50) {
+    document.write("Liczba należy do przedziału (10;50]<br>");
+} else {
+    document.write("Liczba NIE należy do przedziału<br>");
+}
+
+var dzien_luk = prompt("Podaj dzień urodzenia:");
+var x_luk = parseInt(dzien_luk) + 50;
+
+if (x_luk < 100 || x_luk >= 200) {
+    document.write("Liczba należy do (-∞,100) lub [200,+∞)");
+} else {
+    document.write("Liczba NIE należy do tych przedziałów");
+}
+
+</script>
+
+</body>
+</html>
+</textarea>
+
+</body>
+</html>
+
+<!-- Łukowski Z42_KOD -->
